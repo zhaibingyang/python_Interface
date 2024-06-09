@@ -1,0 +1,1029 @@
+2024-06-07 19:05:10.049 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:10.053 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:10.053 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json"}
+2024-06-07 19:05:10.053 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:10.053 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"principal": "lemon_py", "credentials": "12345678", "appType": 3, "loginType": 0}
+2024-06-07 19:05:10.053 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:10.054 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:10.054 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:10.054 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：post
+2024-06-07 19:05:10.054 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:10.054 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json'}
+2024-06-07 19:05:10.054 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'principal': 'lemon_py', 'credentials': '12345678', 'appType': 3, 'loginType': 0}
+2024-06-07 19:05:10.429 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:10.429 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:10.429 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"access_token":"0eb61802-ae52-49d2-b382-611b7744c3e2","token_type":"bearer","refresh_token":"704a0e77-a03a-467c-9498-34cbba1b6b69","expires_in":1295999,"pic":"http://shop.lemonban.com:8108/2024/06/1a6d7d55b3bd491dbb55d15cf5f014e8.png","userId":"8d0aa6ffd73a42a0acf5006817c0a564","nickName":"lemon_py","enabled":true}
+2024-06-07 19:05:10.431 | INFO     | tools.handle_extract:extract_response:11 - 提取的响应结果的表达式是：{'access_token': '$..access_token', 'token_type': '$..token_type'}
+2024-06-07 19:05:10.431 | INFO     | tools.handle_extract:extract_response:19 - 提取并设置环境变量后的类属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': '0eb61802-ae52-49d2-b382-611b7744c3e2', 'token_type': 'bearer'}
+2024-06-07 19:05:10.432 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:10.432 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'$.nickName': 'lemon_py', '$.enabled': True}
+2024-06-07 19:05:10.432 | INFO     | tools.handle_response_assert:response_assert:27 - 执行结果是：lemon_py
+2024-06-07 19:05:10.432 | INFO     | tools.handle_response_assert:response_assert:30 - 断言成功！
+2024-06-07 19:05:10.432 | INFO     | tools.handle_response_assert:response_assert:27 - 执行结果是：True
+2024-06-07 19:05:10.432 | INFO     | tools.handle_response_assert:response_assert:30 - 断言成功！
+2024-06-07 19:05:10.435 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:10.436 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:10.436 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:10.436 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"prodName":"真皮圆筒包"}
+2024-06-07 19:05:10.436 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:10.436 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/search/searchProdPage
+2024-06-07 19:05:10.436 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:10.437 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：get
+2024-06-07 19:05:10.437 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/search/searchProdPage
+2024-06-07 19:05:10.437 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：None
+2024-06-07 19:05:10.437 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'prodName': '真皮圆筒包'}
+2024-06-07 19:05:10.547 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:10.548 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:10.548 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"records":[{"prodId":28,"pic":"http://shop.lemonban.com:8108/2022/06/53de1598edf44ef28329799e04c2c328.jpg","prodName":"真皮圆筒包2022新款潮爆款时尚百搭休闲单肩斜挎牛皮圆形桶包包女","price":139.0,"prodCommNumber":0,"positiveRating":0.0,"praiseNumber":0}],"total":1,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"hitCount":false,"countId":null,"maxLimit":null,"searchCount":true,"pages":1}
+2024-06-07 19:05:10.548 | INFO     | tools.handle_extract:extract_response:11 - 提取的响应结果的表达式是：{'prodId': '$..prodId'}
+2024-06-07 19:05:10.549 | INFO     | tools.handle_extract:extract_response:19 - 提取并设置环境变量后的类属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': '0eb61802-ae52-49d2-b382-611b7744c3e2', 'token_type': 'bearer', 'prodId': 28}
+2024-06-07 19:05:10.549 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:10.549 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:10.552 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:10.552 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:10.552 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:10.552 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"prodId":#prodId#}
+2024-06-07 19:05:10.552 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['prodId']
+2024-06-07 19:05:10.552 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"prodId":28}
+2024-06-07 19:05:10.553 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:10.553 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/prod/prodInfo
+2024-06-07 19:05:10.553 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:10.553 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：GET
+2024-06-07 19:05:10.553 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/prod/prodInfo
+2024-06-07 19:05:10.553 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：None
+2024-06-07 19:05:10.556 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'prodId': 28}
+2024-06-07 19:05:10.659 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:10.659 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:10.659 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"shopId":1,"shopName":null,"prodId":28,"prodName":"真皮圆筒包2022新款潮爆款时尚百搭休闲单肩斜挎牛皮圆形桶包包女","price":139.0,"content":"<p><img src=\"https://img.alicdn.com/imgextra/i1/2200630439983/O1CN01PDMI0c2NcGeBqpYpF_!!2200630439983.jpg\" /></p>\n<p><img src=\"https://img.alicdn.com/imgextra/i2/2200630439983/O1CN01EVzM5L2NcGeEhIKZn_!!2200630439983.jpg\" /></p>\n<p><img src=\"https://img.alicdn.com/imgextra/i2/2200630439983/O1CN01jLZC6G2NcGeHpzygf_!!2200630439983.jpg\" /></p>\n<p><img src=\"https://img.alicdn.com/imgextra/i2/2200630439983/O1CN01I3ENDJ2NcGeHpzAoJ_!!2200630439983.jpg\" /></p>\n<p><img src=\"https://img.alicdn.com/imgextra/i3/2200630439983/O1CN011X6EqI2NcGeN1ywYv_!!2200630439983.jpg\" /></p>\n<p><img src=\"https://img.alicdn.com/imgextra/i3/2200630439983/O1CN01SrBvbN2NcGeMLfvz1_!!2200630439983.jpg\" /></p>\n<p><img src=\"https://img.alicdn.com/imgextra/i4/2200630439983/O1CN01OQvrhF2NcGeMLhLJU_!!2200630439983.jpg\" /></p>\n<p><img src=\"https://img.alicdn.com/imgextra/i1/2200630439983/O1CN014f0cvs2NcGeKXCwu3_!!2200630439983.jpg\" /></p>","oriPrice":139.0,"waterSoldNum":0,"totalStocks":484885,"brief":"真皮圆筒包2022新款潮爆款时尚百搭休闲单肩斜挎牛皮圆形桶包包女","video":"","pic":"http://shop.lemonban.com:8108/2022/06/53de1598edf44ef28329799e04c2c328.jpg","imgs":"http://shop.lemonban.com:8108/2022/06/53de1598edf44ef28329799e04c2c328.jpg,http://shop.lemonban.com:8108/2022/06/29cca1d175b44220b7a91188d5217fe5.jpg,http://shop.lemonban.com:8108/2022/06/bfa0dff3f5b64fcab909f121ca8c5104.jpg,http://shop.lemonban.com:8108/2022/06/23d0321a76f742b097e0bb57b765260d.jpg","categoryId":132,"prodType":0,"scorePrice":null,"liveRoomParams":[],"skuList":[{"skuId":7177,"price":139.0,"oriPrice":139.0,"stocks":484882,"skuName":"","skuScore":1,"pic":null,"properties":""}],"groupActivityId":0,"activityPrice":null,"startDeliveryFee":null,"deliveryModeVO":{"hasUserPickUp":false,"hasShopDelivery":true,"hasCityDelivery":false},"preSellStatus":0,"preSellTime":null}
+2024-06-07 19:05:10.659 | INFO     | tools.handle_extract:extract_response:11 - 提取的响应结果的表达式是：{'skuId': '$..skuId'}
+2024-06-07 19:05:10.660 | INFO     | tools.handle_extract:extract_response:19 - 提取并设置环境变量后的类属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': '0eb61802-ae52-49d2-b382-611b7744c3e2', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177}
+2024-06-07 19:05:10.660 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:10.660 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:10.663 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:10.663 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:10.664 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"Content-Type":"application/json","Authorization": "#token_type##access_token#"}
+2024-06-07 19:05:10.664 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['token_type', 'access_token']
+2024-06-07 19:05:10.664 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json","Authorization": "bearer0eb61802-ae52-49d2-b382-611b7744c3e2"}
+2024-06-07 19:05:10.664 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:10.664 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"basketId": 0, "count": 1, "prodId": #prodId#, "shopId": 1, "skuId": #skuId#}
+2024-06-07 19:05:10.664 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['prodId', 'skuId']
+2024-06-07 19:05:10.665 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"basketId": 0, "count": 1, "prodId": 28, "shopId": 1, "skuId": 7177}
+2024-06-07 19:05:10.665 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:10.665 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/p/shopCart/changeItem
+2024-06-07 19:05:10.665 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:10.665 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：POST
+2024-06-07 19:05:10.665 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/p/shopCart/changeItem
+2024-06-07 19:05:10.665 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json', 'Authorization': 'bearer0eb61802-ae52-49d2-b382-611b7744c3e2'}
+2024-06-07 19:05:10.666 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'basketId': 0, 'count': 1, 'prodId': 28, 'shopId': 1, 'skuId': 7177}
+2024-06-07 19:05:10.780 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:10.781 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:10.781 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：添加成功
+2024-06-07 19:05:10.781 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:10.781 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:10.782 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '添加成功'}
+2024-06-07 19:05:10.782 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：添加成功
+2024-06-07 19:05:10.782 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:10.785 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:10.785 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:10.785 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"Content-Type":"application/json","Authorization": "#token_type##access_token#"}
+2024-06-07 19:05:10.785 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['token_type', 'access_token']
+2024-06-07 19:05:10.785 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json","Authorization": "bearer0eb61802-ae52-49d2-b382-611b7744c3e2"}
+2024-06-07 19:05:10.786 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:10.786 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"basketId": 0, "count": 5, "prodId": #prodId#, "shopId": 1, "skuId": #skuId#}
+2024-06-07 19:05:10.786 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['prodId', 'skuId']
+2024-06-07 19:05:10.786 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"basketId": 0, "count": 5, "prodId": 28, "shopId": 1, "skuId": 7177}
+2024-06-07 19:05:10.786 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:10.786 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/p/shopCart/changeItem
+2024-06-07 19:05:10.786 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:10.786 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：POST
+2024-06-07 19:05:10.787 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/p/shopCart/changeItem
+2024-06-07 19:05:10.787 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json', 'Authorization': 'bearer0eb61802-ae52-49d2-b382-611b7744c3e2'}
+2024-06-07 19:05:10.787 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'basketId': 0, 'count': 5, 'prodId': 28, 'shopId': 1, 'skuId': 7177}
+2024-06-07 19:05:10.959 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:10.959 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:10.959 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：
+2024-06-07 19:05:10.959 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:10.960 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:10.960 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '添加成功'}
+2024-06-07 19:05:10.960 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：
+2024-06-07 19:05:10.960 | ERROR    | tools.handle_response_assert:response_assert:41 - 断言失败！
+2024-06-07 19:05:11.089 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:11.089 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:11.089 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"Content-Type":"application/json","Authorization": "#token_type##access_token#"}
+2024-06-07 19:05:11.089 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['token_type', 'access_token']
+2024-06-07 19:05:11.090 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json","Authorization": "bearer0eb61802-ae52-49d2-b382-611b7744c3e2"}
+2024-06-07 19:05:11.090 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:11.090 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"basketId": 0, "count": 0, "prodId": #prodId#, "shopId": 1, "skuId": #skuId#}
+2024-06-07 19:05:11.090 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['prodId', 'skuId']
+2024-06-07 19:05:11.090 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"basketId": 0, "count": 0, "prodId": 28, "shopId": 1, "skuId": 7177}
+2024-06-07 19:05:11.090 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:11.090 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/p/shopCart/changeItem
+2024-06-07 19:05:11.091 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:11.091 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：POST
+2024-06-07 19:05:11.091 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/p/shopCart/changeItem
+2024-06-07 19:05:11.091 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json', 'Authorization': 'bearer0eb61802-ae52-49d2-b382-611b7744c3e2'}
+2024-06-07 19:05:11.091 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'basketId': 0, 'count': 0, 'prodId': 28, 'shopId': 1, 'skuId': 7177}
+2024-06-07 19:05:11.179 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:11.179 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:11.179 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：输入更改数量
+2024-06-07 19:05:11.179 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:11.179 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:11.179 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '输入更改数量'}
+2024-06-07 19:05:11.179 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：输入更改数量
+2024-06-07 19:05:11.179 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:11.183 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:11.183 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:11.183 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"Content-Type":"application/json","Authorization": "#token_type##access_token#"}
+2024-06-07 19:05:11.183 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['token_type', 'access_token']
+2024-06-07 19:05:11.183 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json","Authorization": "bearer0eb61802-ae52-49d2-b382-611b7744c3e2"}
+2024-06-07 19:05:11.183 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:11.183 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"basketId": 0, "count": "a", "prodId": #prodId#, "shopId": 1, "skuId": #skuId#}
+2024-06-07 19:05:11.184 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['prodId', 'skuId']
+2024-06-07 19:05:11.184 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"basketId": 0, "count": "a", "prodId": 28, "shopId": 1, "skuId": 7177}
+2024-06-07 19:05:11.184 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:11.184 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/p/shopCart/changeItem
+2024-06-07 19:05:11.184 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:11.184 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：POST
+2024-06-07 19:05:11.194 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/p/shopCart/changeItem
+2024-06-07 19:05:11.195 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json', 'Authorization': 'bearer0eb61802-ae52-49d2-b382-611b7744c3e2'}
+2024-06-07 19:05:11.195 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'basketId': 0, 'count': 'a', 'prodId': 28, 'shopId': 1, 'skuId': 7177}
+2024-06-07 19:05:11.284 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:11.284 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:11.284 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"timestamp":"2024-06-07 19:05:10","status":400,"error":"Bad Request","message":"","path":"/p/shopCart/changeItem"}
+2024-06-07 19:05:11.284 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:11.284 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:11.284 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '请输入正确的数量'}
+2024-06-07 19:05:11.285 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：{"timestamp":"2024-06-07 19:05:10","status":400,"error":"Bad Request","message":"","path":"/p/shopCart/changeItem"}
+2024-06-07 19:05:11.285 | ERROR    | tools.handle_response_assert:response_assert:41 - 断言失败！
+2024-06-07 19:05:11.289 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:11.289 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:11.289 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json"}
+2024-06-07 19:05:11.289 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:11.293 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"principal": "lemon_py", "credentials": "12345678", "appType": 3, "loginType": 0}
+2024-06-07 19:05:11.293 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:11.293 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:11.293 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:11.293 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：post
+2024-06-07 19:05:11.293 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:11.293 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json'}
+2024-06-07 19:05:11.293 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'principal': 'lemon_py', 'credentials': '12345678', 'appType': 3, 'loginType': 0}
+2024-06-07 19:05:11.502 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:11.503 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:11.503 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"access_token":"c446ce08-9879-4cb5-8bca-0873702c6080","token_type":"bearer","refresh_token":"bb70e308-ea34-48e3-9c9f-63f9c4248467","expires_in":1295999,"pic":"http://shop.lemonban.com:8108/2024/06/1a6d7d55b3bd491dbb55d15cf5f014e8.png","userId":"8d0aa6ffd73a42a0acf5006817c0a564","nickName":"lemon_py","enabled":true}
+2024-06-07 19:05:11.503 | INFO     | tools.handle_extract:extract_response:11 - 提取的响应结果的表达式是：{'access_token': '$..access_token', 'token_type': '$..token_type'}
+2024-06-07 19:05:11.504 | INFO     | tools.handle_extract:extract_response:19 - 提取并设置环境变量后的类属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': 'c446ce08-9879-4cb5-8bca-0873702c6080', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177}
+2024-06-07 19:05:11.504 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:11.504 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'$.nickName': 'lemon_py', '$.enabled': True}
+2024-06-07 19:05:11.504 | INFO     | tools.handle_response_assert:response_assert:27 - 执行结果是：lemon_py
+2024-06-07 19:05:11.504 | INFO     | tools.handle_response_assert:response_assert:30 - 断言成功！
+2024-06-07 19:05:11.504 | INFO     | tools.handle_response_assert:response_assert:27 - 执行结果是：True
+2024-06-07 19:05:11.504 | INFO     | tools.handle_response_assert:response_assert:30 - 断言成功！
+2024-06-07 19:05:11.507 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:11.508 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:11.508 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:11.508 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"prodName":"真皮圆筒包"}
+2024-06-07 19:05:11.508 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:11.508 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/search/searchProdPage
+2024-06-07 19:05:11.508 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:11.508 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：get
+2024-06-07 19:05:11.508 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/search/searchProdPage
+2024-06-07 19:05:11.513 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：None
+2024-06-07 19:05:11.514 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'prodName': '真皮圆筒包'}
+2024-06-07 19:05:11.628 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:11.629 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:11.629 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"records":[{"prodId":28,"pic":"http://shop.lemonban.com:8108/2022/06/53de1598edf44ef28329799e04c2c328.jpg","prodName":"真皮圆筒包2022新款潮爆款时尚百搭休闲单肩斜挎牛皮圆形桶包包女","price":139.0,"prodCommNumber":0,"positiveRating":0.0,"praiseNumber":0}],"total":1,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"hitCount":false,"countId":null,"maxLimit":null,"searchCount":true,"pages":1}
+2024-06-07 19:05:11.629 | INFO     | tools.handle_extract:extract_response:11 - 提取的响应结果的表达式是：{'prodId': '$..prodId'}
+2024-06-07 19:05:11.629 | INFO     | tools.handle_extract:extract_response:19 - 提取并设置环境变量后的类属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': 'c446ce08-9879-4cb5-8bca-0873702c6080', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177}
+2024-06-07 19:05:11.629 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:11.629 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:11.633 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:11.634 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:11.634 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:11.634 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"prodId":#prodId#}
+2024-06-07 19:05:11.634 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['prodId']
+2024-06-07 19:05:11.634 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"prodId":28}
+2024-06-07 19:05:11.634 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:11.635 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/prod/prodInfo
+2024-06-07 19:05:11.635 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:11.635 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：GET
+2024-06-07 19:05:11.635 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/prod/prodInfo
+2024-06-07 19:05:11.635 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：None
+2024-06-07 19:05:11.635 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'prodId': 28}
+2024-06-07 19:05:11.730 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:11.731 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:11.731 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"shopId":1,"shopName":null,"prodId":28,"prodName":"真皮圆筒包2022新款潮爆款时尚百搭休闲单肩斜挎牛皮圆形桶包包女","price":139.0,"content":"<p><img src=\"https://img.alicdn.com/imgextra/i1/2200630439983/O1CN01PDMI0c2NcGeBqpYpF_!!2200630439983.jpg\" /></p>\n<p><img src=\"https://img.alicdn.com/imgextra/i2/2200630439983/O1CN01EVzM5L2NcGeEhIKZn_!!2200630439983.jpg\" /></p>\n<p><img src=\"https://img.alicdn.com/imgextra/i2/2200630439983/O1CN01jLZC6G2NcGeHpzygf_!!2200630439983.jpg\" /></p>\n<p><img src=\"https://img.alicdn.com/imgextra/i2/2200630439983/O1CN01I3ENDJ2NcGeHpzAoJ_!!2200630439983.jpg\" /></p>\n<p><img src=\"https://img.alicdn.com/imgextra/i3/2200630439983/O1CN011X6EqI2NcGeN1ywYv_!!2200630439983.jpg\" /></p>\n<p><img src=\"https://img.alicdn.com/imgextra/i3/2200630439983/O1CN01SrBvbN2NcGeMLfvz1_!!2200630439983.jpg\" /></p>\n<p><img src=\"https://img.alicdn.com/imgextra/i4/2200630439983/O1CN01OQvrhF2NcGeMLhLJU_!!2200630439983.jpg\" /></p>\n<p><img src=\"https://img.alicdn.com/imgextra/i1/2200630439983/O1CN014f0cvs2NcGeKXCwu3_!!2200630439983.jpg\" /></p>","oriPrice":139.0,"waterSoldNum":0,"totalStocks":484885,"brief":"真皮圆筒包2022新款潮爆款时尚百搭休闲单肩斜挎牛皮圆形桶包包女","video":"","pic":"http://shop.lemonban.com:8108/2022/06/53de1598edf44ef28329799e04c2c328.jpg","imgs":"http://shop.lemonban.com:8108/2022/06/53de1598edf44ef28329799e04c2c328.jpg,http://shop.lemonban.com:8108/2022/06/29cca1d175b44220b7a91188d5217fe5.jpg,http://shop.lemonban.com:8108/2022/06/bfa0dff3f5b64fcab909f121ca8c5104.jpg,http://shop.lemonban.com:8108/2022/06/23d0321a76f742b097e0bb57b765260d.jpg","categoryId":132,"prodType":0,"scorePrice":null,"liveRoomParams":[],"skuList":[{"skuId":7177,"price":139.0,"oriPrice":139.0,"stocks":484882,"skuName":"","skuScore":1,"pic":null,"properties":""}],"groupActivityId":0,"activityPrice":null,"startDeliveryFee":null,"deliveryModeVO":{"hasUserPickUp":false,"hasShopDelivery":true,"hasCityDelivery":false},"preSellStatus":0,"preSellTime":null}
+2024-06-07 19:05:11.731 | INFO     | tools.handle_extract:extract_response:11 - 提取的响应结果的表达式是：{'skuId': '$..skuId'}
+2024-06-07 19:05:11.732 | INFO     | tools.handle_extract:extract_response:19 - 提取并设置环境变量后的类属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': 'c446ce08-9879-4cb5-8bca-0873702c6080', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177}
+2024-06-07 19:05:11.732 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:11.732 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:11.735 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:11.735 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:11.735 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"Content-Type":"application/json","Authorization": "#token_type##access_token#"}
+2024-06-07 19:05:11.739 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['token_type', 'access_token']
+2024-06-07 19:05:11.739 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json","Authorization": "bearerc446ce08-9879-4cb5-8bca-0873702c6080"}
+2024-06-07 19:05:11.739 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:11.739 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"basketId": 0, "count": 1, "prodId": #prodId#, "shopId": 1, "skuId": #skuId#}
+2024-06-07 19:05:11.739 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['prodId', 'skuId']
+2024-06-07 19:05:11.739 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"basketId": 0, "count": 1, "prodId": 28, "shopId": 1, "skuId": 7177}
+2024-06-07 19:05:11.739 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:11.740 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/p/shopCart/changeItem
+2024-06-07 19:05:11.740 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:11.740 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：POST
+2024-06-07 19:05:11.740 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/p/shopCart/changeItem
+2024-06-07 19:05:11.740 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json', 'Authorization': 'bearerc446ce08-9879-4cb5-8bca-0873702c6080'}
+2024-06-07 19:05:11.740 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'basketId': 0, 'count': 1, 'prodId': 28, 'shopId': 1, 'skuId': 7177}
+2024-06-07 19:05:11.844 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:11.844 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:11.844 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：
+2024-06-07 19:05:11.844 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:11.845 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:11.845 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:11.848 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:11.848 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:11.848 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"Content-Type":"application/json","Authorization": "#token_type##access_token#"}
+2024-06-07 19:05:11.848 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['token_type', 'access_token']
+2024-06-07 19:05:11.849 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json","Authorization": "bearerc446ce08-9879-4cb5-8bca-0873702c6080"}
+2024-06-07 19:05:11.849 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:11.849 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：[]
+2024-06-07 19:05:11.849 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:11.849 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/p/shopCart/info
+2024-06-07 19:05:11.849 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:11.849 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：POST
+2024-06-07 19:05:11.849 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/p/shopCart/info
+2024-06-07 19:05:11.850 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json', 'Authorization': 'bearerc446ce08-9879-4cb5-8bca-0873702c6080'}
+2024-06-07 19:05:11.850 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：[]
+2024-06-07 19:05:11.955 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:11.956 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:11.956 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：[{"shopId":1,"shopName":"碧海蓝天","shopCityStatus":1,"shopCartItemDiscounts":[{"totalAmount":null,"chooseDiscountItemDto":{"discountId":281,"discountRule":0,"needAmount":100.0,"discountType":0,"prodCount":7,"prodsPrice":973.0,"discount":90.0,"reduceAmount":90.0},"shopCartItems":[{"prodName":"真皮圆筒包2022新款潮爆款时尚百搭休闲单肩斜挎牛皮圆形桶包包女","prodNameCn":"真皮圆筒包2022新款潮爆款时尚百搭休闲单肩斜挎牛皮圆形桶包包女","prodNameEn":"真皮圆筒包2022新款潮爆款时尚百搭休闲单肩斜挎牛皮圆形桶包包女","prodCount":7,"pic":"http://shop.lemonban.com:8108/2022/06/53de1598edf44ef28329799e04c2c328.jpg","price":139.0,"categoryId":null,"productTotalAmount":973.0,"prodId":28,"skuId":7177,"skuName":"","useScore":null,"scorePrice":0,"basketId":13088,"actualTotal":null,"discountId":281,"shareReduce":0.0,"isShareReduce":null,"scorePayReduce":null,"discounts":[{"discountId":284,"shopId":null,"mobilePic":null,"pcPic":null,"pcBackgroundPic":null,"discountName":"全部商品参与+每满一次减一次ysf_ytv","discountRule":null,"discountType":null,"suitableProdType":null,"maxReduceAmount":null,"startTime":null,"endTime":null,"discountItems":null},{"discountId":281,"shopId":null,"mobilePic":null,"pcPic":null,"pcBackgroundPic":null,"discountName":"满钱减钱全部商品参与ysf_AJoJ","discountRule":null,"discountType":null,"suitableProdType":null,"maxReduceAmount":null,"startTime":null,"endTime":null,"discountItems":null}],"deliveryMode":"{\"hasUserPickUp\": false, \"hasCityDelivery\": false, \"hasShopDelivery\": true}","deliveryModeVO":{"hasUserPickUp":false,"hasShopDelivery":true,"hasCityDelivery":false},"isCheck":false,"shopId":1,"shopName":"碧海蓝天","oriPrice":139.0,"distributionCardNo":null,"basketDate":"2024-06-07 19:05:10","preSellStatus":null,"preSellTime":null,"shopCityStatus":1}]}]}]
+2024-06-07 19:05:11.956 | INFO     | tools.handle_extract:extract_response:11 - 提取的响应结果的表达式是：{'basketId': '$..basketId'}
+2024-06-07 19:05:11.956 | INFO     | tools.handle_extract:extract_response:19 - 提取并设置环境变量后的类属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': 'c446ce08-9879-4cb5-8bca-0873702c6080', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177, 'basketId': 13088}
+2024-06-07 19:05:11.957 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:11.957 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:11.960 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:11.960 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:11.960 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"Content-Type":"application/json","Authorization": "#token_type##access_token#"}
+2024-06-07 19:05:11.960 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['token_type', 'access_token']
+2024-06-07 19:05:11.970 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json","Authorization": "bearerc446ce08-9879-4cb5-8bca-0873702c6080"}
+2024-06-07 19:05:11.970 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:11.971 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"addrId": 0, "basketIds":[#basketId#], "couponIds": [], "isScorePay": 0, "userChangeCoupon": 0,       "userUseScore": 0}
+2024-06-07 19:05:11.971 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['basketId']
+2024-06-07 19:05:11.971 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"addrId": 0, "basketIds":[13088], "couponIds": [], "isScorePay": 0, "userChangeCoupon": 0,       "userUseScore": 0}
+2024-06-07 19:05:11.971 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:11.971 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/p/order/confirm
+2024-06-07 19:05:11.971 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:11.971 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：POST
+2024-06-07 19:05:11.971 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/p/order/confirm
+2024-06-07 19:05:11.972 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json', 'Authorization': 'bearerc446ce08-9879-4cb5-8bca-0873702c6080'}
+2024-06-07 19:05:11.972 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'addrId': 0, 'basketIds': [13088], 'couponIds': [], 'isScorePay': 0, 'userChangeCoupon': 0, 'userUseScore': 0}
+2024-06-07 19:05:12.101 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:12.101 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:12.101 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"actualTotal":883.0,"total":973.0,"totalCount":7,"orderReduce":90.0,"scorePrice":null,"maxUsableScore":10001,"totalUsableScore":0,"totalScoreAmount":0.0,"totalLevelAmount":0.0,"freeTransfee":0.0,"totalTransfee":0.0,"userAddr":{"addrId":1541,"receiver":"tricy","province":"湖南省","city":"长沙市","area":"岳麓区","addr":"麓谷企业广场","mobile":"13455667788","lng":0.0,"lat":0.0,"commonAddr":1,"provinceId":43,"cityId":4301,"areaId":430104},"shopCartOrders":[{"shopId":1,"shopName":"碧海蓝天","actualTotal":883.0,"total":973.0,"totalCount":7,"transfee":0.0,"discountReduce":90.0,"couponReduce":null,"shopReduce":90.0,"remarks":null,"scoreReduce":0.0,"useScore":null,"levelReduce":0.0,"freeTransfee":0.0,"shopCartItemDiscounts":[{"totalAmount":883.0,"chooseDiscountItemDto":{"discountId":281,"discountRule":0,"needAmount":100.0,"discountType":0,"prodCount":7,"prodsPrice":973.0,"discount":90.0,"reduceAmount":90.0},"shopCartItems":[{"prodName":"真皮圆筒包2022新款潮爆款时尚百搭休闲单肩斜挎牛皮圆形桶包包女","prodNameCn":"真皮圆筒包2022新款潮爆款时尚百搭休闲单肩斜挎牛皮圆形桶包包女","prodNameEn":"真皮圆筒包2022新款潮爆款时尚百搭休闲单肩斜挎牛皮圆形桶包包女","prodCount":7,"pic":"http://shop.lemonban.com:8108/2022/06/53de1598edf44ef28329799e04c2c328.jpg","price":139.0,"categoryId":null,"productTotalAmount":973.0,"prodId":28,"skuId":7177,"skuName":"","useScore":null,"scorePrice":0,"basketId":13088,"actualTotal":883.0,"discountId":281,"shareReduce":90.0,"isShareReduce":0,"scorePayReduce":null,"discounts":[{"discountId":284,"shopId":null,"mobilePic":null,"pcPic":null,"pcBackgroundPic":null,"discountName":"全部商品参与+每满一次减一次ysf_ytv","discountRule":null,"discountType":null,"suitableProdType":null,"maxReduceAmount":null,"startTime":null,"endTime":null,"discountItems":null},{"discountId":281,"shopId":null,"mobilePic":null,"pcPic":null,"pcBackgroundPic":null,"discountName":"满钱减钱全部商品参与ysf_AJoJ","discountRule":null,"discountType":null,"suitableProdType":null,"maxReduceAmount":null,"startTime":null,"endTime":null,"discountItems":null}],"deliveryMode":"{\"hasUserPickUp\": false, \"hasCityDelivery\": false, \"hasShopDelivery\": true}","deliveryModeVO":{"hasUserPickUp":false,"hasShopDelivery":true,"hasCityDelivery":false},"isCheck":null,"shopId":1,"shopName":"碧海蓝天","oriPrice":139.0,"distributionCardNo":null,"basketDate":"2024-06-07 19:05:10","preSellStatus":null,"preSellTime":null,"shopCityStatus":1}]}],"coupons":[{"couponId":247,"shopId":1,"couponName":"满0.02减0.01","subTitle":"满0.02减0.01","couponType":1,"cashCondition":0.02,"reduceAmount":0.01,"couponDiscount":0.0,"startTime":"2023-07-23","endTime":"2023-07-23","suitableProdType":1,"prodIds":[517],"chooseProdIds":[],"canUse":false,"couponUserId":1275,"validTimeType":1,"afterReceiveDays":0,"validDays":1,"receiveTime":"2024-01-30","choose":false},{"couponId":321,"shopId":1,"couponName":"大放送","subTitle":"切为","couponType":1,"cashCondition":50.0,"reduceAmount":5.0,"couponDiscount":0.0,"startTime":"2024-04-15","endTime":"2024-04-17","suitableProdType":1,"prodIds":[3492],"chooseProdIds":[],"canUse":false,"couponUserId":1291,"validTimeType":1,"afterReceiveDays":0,"validDays":1,"receiveTime":"2024-05-19","choose":false}],"shopCityStatus":1,"orderNumber":null}],"coupons":null,"isScorePay":0,"shopUseScore":100.0,"filterShopItems":[],"orderSelfStationDto":null,"orderSelfStationDtos":null,"dvyType":1,"stationId":null,"shopCityStatus":1}
+2024-06-07 19:05:12.101 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:12.108 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:12.108 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:12.112 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:12.112 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:12.112 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"Content-Type":"application/json","Authorization": "#token_type##access_token#"}
+2024-06-07 19:05:12.112 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['token_type', 'access_token']
+2024-06-07 19:05:12.112 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json","Authorization": "bearerc446ce08-9879-4cb5-8bca-0873702c6080"}
+2024-06-07 19:05:12.113 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:12.113 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"orderShopParam": [{"remarks": "", "shopId": 1}]}
+2024-06-07 19:05:12.113 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:12.113 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/p/order/submit
+2024-06-07 19:05:12.113 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:12.113 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：POST
+2024-06-07 19:05:12.113 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/p/order/submit
+2024-06-07 19:05:12.113 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json', 'Authorization': 'bearerc446ce08-9879-4cb5-8bca-0873702c6080'}
+2024-06-07 19:05:12.113 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'orderShopParam': [{'remarks': '', 'shopId': 1}]}
+2024-06-07 19:05:12.250 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:12.250 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:12.250 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"orderNumbers":"1799034867032526848","duplicateError":null}
+2024-06-07 19:05:12.250 | INFO     | tools.handle_extract:extract_response:11 - 提取的响应结果的表达式是：{'orderNumbers': '$..orderNumbers'}
+2024-06-07 19:05:12.251 | INFO     | tools.handle_extract:extract_response:19 - 提取并设置环境变量后的类属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': 'c446ce08-9879-4cb5-8bca-0873702c6080', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177, 'basketId': 13088, 'orderNumbers': '1799034867032526848'}
+2024-06-07 19:05:12.251 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:12.251 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'$..duplicateError': None}
+2024-06-07 19:05:12.251 | INFO     | tools.handle_response_assert:response_assert:27 - 执行结果是：None
+2024-06-07 19:05:12.251 | INFO     | tools.handle_response_assert:response_assert:30 - 断言成功！
+2024-06-07 19:05:12.251 | INFO     | tools.handle_db_assert:db_assert:10 - ==========================数据库断言开始了！===========================
+2024-06-07 19:05:12.251 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:12.252 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"select count(1) from tz_order where order_number = '#orderNumbers#'":1, 
+"select status from tz_order where order_number = '#orderNumbers#'":1}
+2024-06-07 19:05:12.252 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['orderNumbers', 'orderNumbers']
+2024-06-07 19:05:12.252 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"select count(1) from tz_order where order_number = '1799034867032526848'":1, 
+"select status from tz_order where order_number = '1799034867032526848'":1}
+2024-06-07 19:05:12.252 | INFO     | tools.handle_db_assert:db_assert:16 - 数据库断言的表达式：{"select count(1) from tz_order where order_number = '1799034867032526848'": 1, "select status from tz_order where order_number = '1799034867032526848'": 1}
+2024-06-07 19:05:12.905 | INFO     | tools.handle_mysql:query_data:32 - 数据库的查询结果条数为1
+2024-06-07 19:05:12.905 | INFO     | tools.handle_mysql:query_data:36 - 查询结果是：{'count(1)': 1}
+2024-06-07 19:05:12.906 | INFO     | tools.handle_db_assert:db_assert:23 - 数据库查询的实际结果：1
+2024-06-07 19:05:12.906 | INFO     | tools.handle_db_assert:db_assert:24 - 数据库查询的预期结果：1
+2024-06-07 19:05:12.906 | INFO     | tools.handle_db_assert:db_assert:27 - 数据库断言成功！
+2024-06-07 19:05:13.131 | INFO     | tools.handle_mysql:query_data:32 - 数据库的查询结果条数为1
+2024-06-07 19:05:13.132 | INFO     | tools.handle_mysql:query_data:36 - 查询结果是：{'status': 1}
+2024-06-07 19:05:13.132 | INFO     | tools.handle_db_assert:db_assert:23 - 数据库查询的实际结果：1
+2024-06-07 19:05:13.132 | INFO     | tools.handle_db_assert:db_assert:24 - 数据库查询的预期结果：1
+2024-06-07 19:05:13.132 | INFO     | tools.handle_db_assert:db_assert:27 - 数据库断言成功！
+2024-06-07 19:05:13.140 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:13.140 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:13.140 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"Content-Type":"application/json","Authorization": "#token_type##access_token#"}
+2024-06-07 19:05:13.140 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['token_type', 'access_token']
+2024-06-07 19:05:13.140 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json","Authorization": "bearerc446ce08-9879-4cb5-8bca-0873702c6080"}
+2024-06-07 19:05:13.141 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:13.141 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"payType":3,"orderNumbers":"#orderNumbers#"}
+2024-06-07 19:05:13.141 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['orderNumbers']
+2024-06-07 19:05:13.141 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"payType":3,"orderNumbers":"1799034867032526848"}
+2024-06-07 19:05:13.141 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:13.141 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/p/order/pay
+2024-06-07 19:05:13.141 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:13.141 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：POST
+2024-06-07 19:05:13.141 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/p/order/pay
+2024-06-07 19:05:13.142 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json', 'Authorization': 'bearerc446ce08-9879-4cb5-8bca-0873702c6080'}
+2024-06-07 19:05:13.142 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'payType': 3, 'orderNumbers': '1799034867032526848'}
+2024-06-07 19:05:13.616 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:13.616 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:13.616 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：weixin://wxpay/bizpayurl?pr=GytWvjdz1
+2024-06-07 19:05:13.616 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:13.617 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:13.617 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:13.626 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:13.626 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:13.626 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json"}
+2024-06-07 19:05:13.627 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:13.627 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"payNo":"#orderNumbers#","bizPayNo":"XXX","isPaySuccess":true}
+2024-06-07 19:05:13.627 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['orderNumbers']
+2024-06-07 19:05:13.627 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"payNo":"1799034867032526848","bizPayNo":"XXX","isPaySuccess":true}
+2024-06-07 19:05:13.627 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:13.627 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/notice/pay/3
+2024-06-07 19:05:13.627 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:13.627 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：POST
+2024-06-07 19:05:13.628 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/notice/pay/3
+2024-06-07 19:05:13.628 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json'}
+2024-06-07 19:05:13.628 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'payNo': '1799034867032526848', 'bizPayNo': 'XXX', 'isPaySuccess': True}
+2024-06-07 19:05:13.816 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:13.816 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:13.816 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：success
+2024-06-07 19:05:13.816 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:13.816 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:13.816 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:13.821 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:13.821 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:13.821 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"Content-Type":"application/json","Authorization": "#token_type##access_token#"}
+2024-06-07 19:05:13.821 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['token_type', 'access_token']
+2024-06-07 19:05:13.821 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json","Authorization": "bearerc446ce08-9879-4cb5-8bca-0873702c6080"}
+2024-06-07 19:05:13.821 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:13.821 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:13.821 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：http://shop.lemonban.com:8107/p/order/isPay/#orderNumbers#
+2024-06-07 19:05:13.821 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['orderNumbers']
+2024-06-07 19:05:13.821 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/p/order/isPay/1799034867032526848
+2024-06-07 19:05:13.821 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:13.821 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：GET
+2024-06-07 19:05:13.821 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/p/order/isPay/1799034867032526848
+2024-06-07 19:05:13.821 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json', 'Authorization': 'bearerc446ce08-9879-4cb5-8bca-0873702c6080'}
+2024-06-07 19:05:13.821 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：None
+2024-06-07 19:05:13.915 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:13.915 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:13.915 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：true
+2024-06-07 19:05:13.916 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:13.916 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:13.916 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': 'true'}
+2024-06-07 19:05:13.916 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：true
+2024-06-07 19:05:13.916 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:13.916 | INFO     | tools.handle_db_assert:db_assert:10 - ==========================数据库断言开始了！===========================
+2024-06-07 19:05:13.916 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:13.916 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"select status from tz_order where order_number = '#orderNumbers#'":2,"select is_payed from tz_order where order_number = '#orderNumbers#'":1}
+2024-06-07 19:05:13.917 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['orderNumbers', 'orderNumbers']
+2024-06-07 19:05:13.917 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"select status from tz_order where order_number = '1799034867032526848'":2,"select is_payed from tz_order where order_number = '1799034867032526848'":1}
+2024-06-07 19:05:13.917 | INFO     | tools.handle_db_assert:db_assert:16 - 数据库断言的表达式：{"select status from tz_order where order_number = '1799034867032526848'": 2, "select is_payed from tz_order where order_number = '1799034867032526848'": 1}
+2024-06-07 19:05:14.161 | INFO     | tools.handle_mysql:query_data:32 - 数据库的查询结果条数为1
+2024-06-07 19:05:14.162 | INFO     | tools.handle_mysql:query_data:36 - 查询结果是：{'status': 2}
+2024-06-07 19:05:14.162 | INFO     | tools.handle_db_assert:db_assert:23 - 数据库查询的实际结果：2
+2024-06-07 19:05:14.163 | INFO     | tools.handle_db_assert:db_assert:24 - 数据库查询的预期结果：2
+2024-06-07 19:05:14.163 | INFO     | tools.handle_db_assert:db_assert:27 - 数据库断言成功！
+2024-06-07 19:05:14.401 | INFO     | tools.handle_mysql:query_data:32 - 数据库的查询结果条数为1
+2024-06-07 19:05:14.401 | INFO     | tools.handle_mysql:query_data:36 - 查询结果是：{'is_payed': 1}
+2024-06-07 19:05:14.402 | INFO     | tools.handle_db_assert:db_assert:23 - 数据库查询的实际结果：1
+2024-06-07 19:05:14.402 | INFO     | tools.handle_db_assert:db_assert:24 - 数据库查询的预期结果：1
+2024-06-07 19:05:14.402 | INFO     | tools.handle_db_assert:db_assert:27 - 数据库断言成功！
+2024-06-07 19:05:14.404 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:14.405 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.405 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json"}
+2024-06-07 19:05:14.405 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.405 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"principal": "lemon_py", "credentials": "12345678", "appType": 3, "loginType":0}
+2024-06-07 19:05:14.405 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.405 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:14.405 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:14.406 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：POST
+2024-06-07 19:05:14.406 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:14.406 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json'}
+2024-06-07 19:05:14.406 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'principal': 'lemon_py', 'credentials': '12345678', 'appType': 3, 'loginType': 0}
+2024-06-07 19:05:14.615 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:14.616 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:14.616 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"access_token":"6e72a935-b9b8-40ac-8ee3-ed48085976bb","token_type":"bearer","refresh_token":"b2f4577e-6aba-451d-ad49-fed91f0e5ef7","expires_in":1295999,"pic":"http://shop.lemonban.com:8108/2024/06/1a6d7d55b3bd491dbb55d15cf5f014e8.png","userId":"8d0aa6ffd73a42a0acf5006817c0a564","nickName":"lemon_py","enabled":true}
+2024-06-07 19:05:14.616 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:14.616 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:14.616 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'$..nickName': 'lemon_py', '$..enabled': True}
+2024-06-07 19:05:14.617 | INFO     | tools.handle_response_assert:response_assert:27 - 执行结果是：lemon_py
+2024-06-07 19:05:14.617 | INFO     | tools.handle_response_assert:response_assert:30 - 断言成功！
+2024-06-07 19:05:14.617 | INFO     | tools.handle_response_assert:response_assert:27 - 执行结果是：True
+2024-06-07 19:05:14.617 | INFO     | tools.handle_response_assert:response_assert:30 - 断言成功！
+2024-06-07 19:05:14.619 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:14.619 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.619 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json"}
+2024-06-07 19:05:14.619 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.619 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"principal": "", "credentials": "lemon123456", "appType": 3, "loginType": 0}
+2024-06-07 19:05:14.619 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.619 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:14.619 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:14.623 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：post
+2024-06-07 19:05:14.623 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:14.623 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json'}
+2024-06-07 19:05:14.623 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'principal': '', 'credentials': 'lemon123456', 'appType': 3, 'loginType': 0}
+2024-06-07 19:05:14.736 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:14.736 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:14.736 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：账号或密码不正确
+2024-06-07 19:05:14.737 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:14.737 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:14.737 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '账号或密码不正确'}
+2024-06-07 19:05:14.737 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：账号或密码不正确
+2024-06-07 19:05:14.737 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:14.740 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:14.741 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.741 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json"}
+2024-06-07 19:05:14.741 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.741 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"principal": "lem", "credentials": "lemon123456", "appType": 3, "loginType": 0}
+2024-06-07 19:05:14.741 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.741 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:14.742 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:14.742 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：post
+2024-06-07 19:05:14.742 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:14.742 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json'}
+2024-06-07 19:05:14.742 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'principal': 'lem', 'credentials': 'lemon123456', 'appType': 3, 'loginType': 0}
+2024-06-07 19:05:14.868 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:14.869 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:14.869 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：账号或密码不正确
+2024-06-07 19:05:14.869 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:14.869 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:14.869 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '账号或密码不正确'}
+2024-06-07 19:05:14.869 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：账号或密码不正确
+2024-06-07 19:05:14.869 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:14.872 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:14.872 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.873 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json"}
+2024-06-07 19:05:14.873 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.873 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"principal": "lemon_autoXXXXXXXXXXXXXXXXX", "credentials": "lemon123456", "appType": 3, "loginType": 0}
+2024-06-07 19:05:14.873 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.873 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:14.873 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:14.873 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：post
+2024-06-07 19:05:14.874 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:14.874 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json'}
+2024-06-07 19:05:14.874 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'principal': 'lemon_autoXXXXXXXXXXXXXXXXX', 'credentials': 'lemon123456', 'appType': 3, 'loginType': 0}
+2024-06-07 19:05:14.984 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:14.984 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:14.985 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：账号或密码不正确
+2024-06-07 19:05:14.985 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:14.985 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:14.985 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '账号或密码不正确'}
+2024-06-07 19:05:14.985 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：账号或密码不正确
+2024-06-07 19:05:14.986 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:14.988 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:14.988 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.988 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json"}
+2024-06-07 19:05:14.989 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.989 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"principal": "lemon!", "credentials": "lemon123456", "appType": 3, "loginType": 0}
+2024-06-07 19:05:14.989 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:14.989 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:14.989 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:14.989 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：post
+2024-06-07 19:05:14.989 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:14.990 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json'}
+2024-06-07 19:05:14.990 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'principal': 'lemon!', 'credentials': 'lemon123456', 'appType': 3, 'loginType': 0}
+2024-06-07 19:05:15.100 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:15.100 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:15.100 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：账号或密码不正确
+2024-06-07 19:05:15.100 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:15.100 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:15.101 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '账号或密码不正确'}
+2024-06-07 19:05:15.101 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：账号或密码不正确
+2024-06-07 19:05:15.101 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:15.103 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:15.104 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.104 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json"}
+2024-06-07 19:05:15.104 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.104 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"principal": "lemon_autoxx", "credentials": "lemon123456", "appType": 3, "loginType": 0}
+2024-06-07 19:05:15.104 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.104 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:15.105 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:15.105 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：post
+2024-06-07 19:05:15.105 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:15.105 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json'}
+2024-06-07 19:05:15.105 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'principal': 'lemon_autoxx', 'credentials': 'lemon123456', 'appType': 3, 'loginType': 0}
+2024-06-07 19:05:15.219 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:15.219 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:15.219 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：账号或密码不正确
+2024-06-07 19:05:15.219 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:15.223 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:15.223 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '账号或密码不正确'}
+2024-06-07 19:05:15.223 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：账号或密码不正确
+2024-06-07 19:05:15.223 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:15.223 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:15.223 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.223 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json"}
+2024-06-07 19:05:15.223 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.227 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"principal": "lemon_py", "credentials": "", "appType": 3, "loginType": 0}
+2024-06-07 19:05:15.227 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.227 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:15.227 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:15.227 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：post
+2024-06-07 19:05:15.227 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:15.227 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json'}
+2024-06-07 19:05:15.227 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'principal': 'lemon_py', 'credentials': '', 'appType': 3, 'loginType': 0}
+2024-06-07 19:05:15.425 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:15.425 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:15.425 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：账号或密码不正确
+2024-06-07 19:05:15.425 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:15.425 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:15.425 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '账号或密码不正确'}
+2024-06-07 19:05:15.426 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：账号或密码不正确
+2024-06-07 19:05:15.426 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:15.434 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:15.434 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.434 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json"}
+2024-06-07 19:05:15.434 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.434 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"principal": "lemon_py", "credentials": "lemon123", "appType": 3, "loginType": 0}
+2024-06-07 19:05:15.435 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.435 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:15.435 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:15.435 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：post
+2024-06-07 19:05:15.435 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:15.435 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json'}
+2024-06-07 19:05:15.435 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'principal': 'lemon_py', 'credentials': 'lemon123', 'appType': 3, 'loginType': 0}
+2024-06-07 19:05:15.637 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:15.637 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:15.637 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：账号或密码不正确
+2024-06-07 19:05:15.637 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:15.637 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:15.637 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:15.640 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:15.640 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.640 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json"}
+2024-06-07 19:05:15.640 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.641 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"principal": "lemon_py", "credentials": "12345678", "appType": 3, "loginType": 0}
+2024-06-07 19:05:15.641 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.641 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:15.641 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:15.641 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：post
+2024-06-07 19:05:15.641 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:15.641 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json'}
+2024-06-07 19:05:15.642 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'principal': 'lemon_py', 'credentials': '12345678', 'appType': 3, 'loginType': 0}
+2024-06-07 19:05:15.852 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:15.852 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:15.852 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"access_token":"3081a8c2-078f-4f63-a634-98bf610defee","token_type":"bearer","refresh_token":"6addbebe-0fd0-4691-bd87-f24baa03fd93","expires_in":1295999,"pic":"http://shop.lemonban.com:8108/2024/06/1a6d7d55b3bd491dbb55d15cf5f014e8.png","userId":"8d0aa6ffd73a42a0acf5006817c0a564","nickName":"lemon_py","enabled":true}
+2024-06-07 19:05:15.853 | INFO     | tools.handle_extract:extract_response:11 - 提取的响应结果的表达式是：{'access_token': '$..access_token', 'token_type': '$..token_type'}
+2024-06-07 19:05:15.853 | INFO     | tools.handle_extract:extract_response:19 - 提取并设置环境变量后的类属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': '3081a8c2-078f-4f63-a634-98bf610defee', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177, 'basketId': 13088, 'orderNumbers': '1799034867032526848'}
+2024-06-07 19:05:15.853 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:15.853 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'$.nickName': 'lemon_py', '$.enabled': True}
+2024-06-07 19:05:15.853 | INFO     | tools.handle_response_assert:response_assert:27 - 执行结果是：lemon_py
+2024-06-07 19:05:15.853 | INFO     | tools.handle_response_assert:response_assert:30 - 断言成功！
+2024-06-07 19:05:15.854 | INFO     | tools.handle_response_assert:response_assert:27 - 执行结果是：True
+2024-06-07 19:05:15.854 | INFO     | tools.handle_response_assert:response_assert:30 - 断言成功！
+2024-06-07 19:05:15.864 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:15.864 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:15.864 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"Authorization": "#token_type##access_token#"}
+2024-06-07 19:05:15.864 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['token_type', 'access_token']
+2024-06-07 19:05:15.864 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Authorization": "bearer3081a8c2-078f-4f63-a634-98bf610defee"}
+2024-06-07 19:05:15.864 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:15.865 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.865 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/p/user/centerInfo
+2024-06-07 19:05:15.865 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:15.865 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：GET
+2024-06-07 19:05:15.865 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/p/user/centerInfo
+2024-06-07 19:05:15.865 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Authorization': 'bearer3081a8c2-078f-4f63-a634-98bf610defee'}
+2024-06-07 19:05:15.865 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：None
+2024-06-07 19:05:15.960 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:15.960 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:15.960 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"orderCountData":{"allCount":326,"unPay":150,"payed":176,"consignment":0,"confirm":0,"success":0,"close":0},"shopAuditStatus":null,"isSetPassword":null,"shopId":null}
+2024-06-07 19:05:15.960 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:15.961 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:15.961 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:15.963 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:15.964 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:15.964 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"Content-Type":"multipart/form-data","Authorization": "#token_type##access_token#"}
+2024-06-07 19:05:15.964 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['token_type', 'access_token']
+2024-06-07 19:05:15.965 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"multipart/form-data","Authorization": "bearer3081a8c2-078f-4f63-a634-98bf610defee"}
+2024-06-07 19:05:15.965 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.965 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"filename":"code.png"}
+2024-06-07 19:05:15.965 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:15.965 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/p/file/upload
+2024-06-07 19:05:15.965 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:15.965 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：POST
+2024-06-07 19:05:15.965 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/p/file/upload
+2024-06-07 19:05:15.966 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'multipart/form-data', 'Authorization': 'bearer3081a8c2-078f-4f63-a634-98bf610defee'}
+2024-06-07 19:05:15.966 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'filename': 'code.png'}
+2024-06-07 19:05:15.967 | INFO     | tools.handle_requests:requests_api:63 - 文件上传的文件对象参数：{'file': <_io.BufferedReader name='D:\\Pychram-Workspace\\python_Interface\\data\\code.png'>}
+2024-06-07 19:05:15.967 | INFO     | tools.handle_requests:requests_api:64 - 文件上传的最终请求头：{'Authorization': 'bearer3081a8c2-078f-4f63-a634-98bf610defee'}
+2024-06-07 19:05:16.066 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:16.066 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:16.066 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"resourcesUrl":"http://shop.lemonban.com:8108/","filePath":"2024/06/b74948476f5d4aaa91429f3885fb77bd.png"}
+2024-06-07 19:05:16.066 | INFO     | tools.handle_extract:extract_response:11 - 提取的响应结果的表达式是：{'resourcesUrl': '$..resourcesUrl', 'filePath': '$..filePath'}
+2024-06-07 19:05:16.066 | INFO     | tools.handle_extract:extract_response:19 - 提取并设置环境变量后的类属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': '3081a8c2-078f-4f63-a634-98bf610defee', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177, 'basketId': 13088, 'orderNumbers': '1799034867032526848', 'resourcesUrl': 'http://shop.lemonban.com:8108/', 'filePath': '2024/06/b74948476f5d4aaa91429f3885fb77bd.png'}
+2024-06-07 19:05:16.067 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:16.067 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:16.069 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:16.070 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:16.070 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"Content-Type":"application/json","Authorization": "#token_type##access_token#"}
+2024-06-07 19:05:16.070 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['token_type', 'access_token']
+2024-06-07 19:05:16.070 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json","Authorization": "bearer3081a8c2-078f-4f63-a634-98bf610defee"}
+2024-06-07 19:05:16.070 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:16.070 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"avatarUrl":"#resourcesUrl##filePath#","nickName":"lemon_py","userMobile":"13552460188","auth":{}}
+2024-06-07 19:05:16.070 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['resourcesUrl', 'filePath']
+2024-06-07 19:05:16.071 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"avatarUrl":"http://shop.lemonban.com:8108/2024/06/b74948476f5d4aaa91429f3885fb77bd.png","nickName":"lemon_py","userMobile":"13552460188","auth":{}}
+2024-06-07 19:05:16.071 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:16.071 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/p/user/setUserInfo
+2024-06-07 19:05:16.074 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:16.074 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：PUT
+2024-06-07 19:05:16.075 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/p/user/setUserInfo
+2024-06-07 19:05:16.075 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json', 'Authorization': 'bearer3081a8c2-078f-4f63-a634-98bf610defee'}
+2024-06-07 19:05:16.075 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'avatarUrl': 'http://shop.lemonban.com:8108/2024/06/b74948476f5d4aaa91429f3885fb77bd.png', 'nickName': 'lemon_py', 'userMobile': '13552460188', 'auth': {}}
+2024-06-07 19:05:16.170 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:16.170 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:16.170 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：
+2024-06-07 19:05:16.170 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:16.171 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:16.171 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:16.174 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:16.174 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:16.174 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{ "Content-Type": "application/json; charset=UTF-8"}
+2024-06-07 19:05:16.174 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:16.175 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"mobile":"#gen_unregister_phone()#"}
+2024-06-07 19:05:16.175 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['gen_unregister_phone()']
+2024-06-07 19:05:16.497 | INFO     | tools.handle_mysql:query_data:32 - 数据库的查询结果条数为0
+2024-06-07 19:05:16.497 | INFO     | tools.handle_mysql:query_data:46 - 数据库没有查询到任何结果！
+2024-06-07 19:05:16.498 | INFO     | tools.handle_gendata:gen_unregister_phone:16 - 生成的可以用的手机号码是:18962698341
+2024-06-07 19:05:16.498 | INFO     | tools.handle_replace:replace_mark:29 - 环境变量的数据为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': '3081a8c2-078f-4f63-a634-98bf610defee', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177, 'basketId': 13088, 'orderNumbers': '1799034867032526848', 'resourcesUrl': 'http://shop.lemonban.com:8108/', 'filePath': '2024/06/b74948476f5d4aaa91429f3885fb77bd.png', 'gen_unregister_phone': '18962698341'}
+2024-06-07 19:05:16.498 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"mobile":"18962698341"}
+2024-06-07 19:05:16.498 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:16.498 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/user/sendRegisterSms
+2024-06-07 19:05:16.499 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:16.499 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：PUT
+2024-06-07 19:05:16.499 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/user/sendRegisterSms
+2024-06-07 19:05:16.499 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json; charset=UTF-8'}
+2024-06-07 19:05:16.499 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'mobile': '18962698341'}
+2024-06-07 19:05:16.637 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:16.637 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:16.637 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：
+2024-06-07 19:05:16.637 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:16.637 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:16.638 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:16.640 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:16.640 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"mobile_code":
+"select mobile_code  from tz_sms_log where user_phone='#gen_unregister_phone#' order by rec_date desc limit 1;"}
+2024-06-07 19:05:16.641 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['gen_unregister_phone']
+2024-06-07 19:05:16.641 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"mobile_code":
+"select mobile_code  from tz_sms_log where user_phone='18962698341' order by rec_date desc limit 1;"}
+2024-06-07 19:05:16.641 | INFO     | tools.handle_presql:pre_sql:10 - ==========================前置sql执行开始=========================
+2024-06-07 19:05:16.641 | INFO     | tools.handle_presql:pre_sql:13 - 前置sql提取表达式是：{'mobile_code': "select mobile_code  from tz_sms_log where user_phone='18962698341' order by rec_date desc limit 1;"}
+2024-06-07 19:05:16.895 | INFO     | tools.handle_mysql:query_data:32 - 数据库的查询结果条数为1
+2024-06-07 19:05:16.896 | INFO     | tools.handle_mysql:query_data:36 - 查询结果是：{'mobile_code': '472235'}
+2024-06-07 19:05:16.896 | INFO     | tools.handle_presql:pre_sql:21 - 查询结果存到环境变量后属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': '3081a8c2-078f-4f63-a634-98bf610defee', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177, 'basketId': 13088, 'orderNumbers': '1799034867032526848', 'resourcesUrl': 'http://shop.lemonban.com:8108/', 'filePath': '2024/06/b74948476f5d4aaa91429f3885fb77bd.png', 'gen_unregister_phone': '18962698341', 'mobile_code': '472235'}
+2024-06-07 19:05:16.897 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:16.897 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{
+ "Content-Type": "application/json; charset=UTF-8"
+}
+2024-06-07 19:05:16.897 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:16.897 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"mobile":"#gen_unregister_phone#","validCode":"#mobile_code#"}
+2024-06-07 19:05:16.897 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['gen_unregister_phone', 'mobile_code']
+2024-06-07 19:05:16.897 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"mobile":"18962698341","validCode":"472235"}
+2024-06-07 19:05:16.897 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:16.898 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/user/checkRegisterSms
+2024-06-07 19:05:16.898 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:16.898 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：PUT
+2024-06-07 19:05:16.898 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/user/checkRegisterSms
+2024-06-07 19:05:16.898 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json; charset=UTF-8'}
+2024-06-07 19:05:16.898 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'mobile': '18962698341', 'validCode': '472235'}
+2024-06-07 19:05:17.032 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:17.032 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:17.032 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：d3ccd8b0c6a3424a80e7e47f1e2274e4
+2024-06-07 19:05:17.033 | INFO     | tools.handle_extract:extract_response:11 - 提取的响应结果的表达式是：{'check_code': 'text'}
+2024-06-07 19:05:17.033 | INFO     | tools.handle_extract:extract_response:19 - 提取并设置环境变量后的类属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': '3081a8c2-078f-4f63-a634-98bf610defee', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177, 'basketId': 13088, 'orderNumbers': '1799034867032526848', 'resourcesUrl': 'http://shop.lemonban.com:8108/', 'filePath': '2024/06/b74948476f5d4aaa91429f3885fb77bd.png', 'gen_unregister_phone': '18962698341', 'mobile_code': '472235', 'check_code': 'd3ccd8b0c6a3424a80e7e47f1e2274e4'}
+2024-06-07 19:05:17.033 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:17.033 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:17.036 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:17.036 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:17.036 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{ "Content-Type": "application/json; charset=UTF-8"}
+2024-06-07 19:05:17.037 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:17.037 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"appType":3,"checkRegisterSmsFlag":"#check_code#","mobile":"#gen_unregister_phone#","userName":"#gen_unregister_name()#","password":"123456","registerOrBind":1,"validateType":1}
+2024-06-07 19:05:17.037 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['check_code', 'gen_unregister_phone', 'gen_unregister_name()']
+2024-06-07 19:05:17.357 | INFO     | tools.handle_mysql:query_data:32 - 数据库的查询结果条数为0
+2024-06-07 19:05:17.357 | INFO     | tools.handle_mysql:query_data:46 - 数据库没有查询到任何结果！
+2024-06-07 19:05:17.357 | INFO     | tools.handle_gendata:gen_unregister_name:28 - 生成的可以用的手机号码是:ioyhwBhyfcjZYZp
+2024-06-07 19:05:17.361 | INFO     | tools.handle_replace:replace_mark:29 - 环境变量的数据为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': '3081a8c2-078f-4f63-a634-98bf610defee', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177, 'basketId': 13088, 'orderNumbers': '1799034867032526848', 'resourcesUrl': 'http://shop.lemonban.com:8108/', 'filePath': '2024/06/b74948476f5d4aaa91429f3885fb77bd.png', 'gen_unregister_phone': '18962698341', 'mobile_code': '472235', 'check_code': 'd3ccd8b0c6a3424a80e7e47f1e2274e4', 'gen_unregister_name': 'ioyhwBhyfcjZYZp'}
+2024-06-07 19:05:17.361 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"appType":3,"checkRegisterSmsFlag":"d3ccd8b0c6a3424a80e7e47f1e2274e4","mobile":"18962698341","userName":"ioyhwBhyfcjZYZp","password":"123456","registerOrBind":1,"validateType":1}
+2024-06-07 19:05:17.361 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:17.361 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/user/registerOrBindUser
+2024-06-07 19:05:17.361 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:17.362 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：PUT
+2024-06-07 19:05:17.362 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/user/registerOrBindUser
+2024-06-07 19:05:17.362 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json; charset=UTF-8'}
+2024-06-07 19:05:17.362 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'appType': 3, 'checkRegisterSmsFlag': 'd3ccd8b0c6a3424a80e7e47f1e2274e4', 'mobile': '18962698341', 'userName': 'ioyhwBhyfcjZYZp', 'password': '123456', 'registerOrBind': 1, 'validateType': 1}
+2024-06-07 19:05:17.589 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:17.589 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:17.590 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"access_token":"3ca1356f-211c-4ed0-8940-e22be6b231c0","token_type":"bearer","refresh_token":"73799e77-7328-4e9d-8f40-93445a6a0129","expires_in":1295999,"pic":null,"userId":"474a6c9c8e1d482b9a7ce9245c9bce85","nickName":"ioyhwBhyfcjZYZp","enabled":true}
+2024-06-07 19:05:17.590 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:17.590 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:17.590 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:17.591 | INFO     | tools.handle_db_assert:db_assert:10 - ==========================数据库断言开始了！===========================
+2024-06-07 19:05:17.591 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:17.591 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"select count(1) from tz_user where user_mobile ='#gen_unregister_phone#'":1}
+2024-06-07 19:05:17.591 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['gen_unregister_phone']
+2024-06-07 19:05:17.591 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"select count(1) from tz_user where user_mobile ='18962698341'":1}
+2024-06-07 19:05:17.591 | INFO     | tools.handle_db_assert:db_assert:16 - 数据库断言的表达式：{"select count(1) from tz_user where user_mobile ='18962698341'": 1}
+2024-06-07 19:05:17.828 | INFO     | tools.handle_mysql:query_data:32 - 数据库的查询结果条数为1
+2024-06-07 19:05:17.829 | INFO     | tools.handle_mysql:query_data:36 - 查询结果是：{'count(1)': 1}
+2024-06-07 19:05:17.829 | INFO     | tools.handle_db_assert:db_assert:23 - 数据库查询的实际结果：1
+2024-06-07 19:05:17.829 | INFO     | tools.handle_db_assert:db_assert:24 - 数据库查询的预期结果：1
+2024-06-07 19:05:17.829 | INFO     | tools.handle_db_assert:db_assert:27 - 数据库断言成功！
+2024-06-07 19:05:17.838 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:17.839 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:17.839 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{
+ "Content-Type": "application/json; charset=UTF-8"
+}
+2024-06-07 19:05:17.839 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:17.840 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"appType":3,"checkRegisterSmsFlag":"#check_code#","mobile":"#gen_unregister_phone#","userName":"#gen_unregister_name()#","password":"lemon123456","registerOrBind":1,"validateType":1}
+2024-06-07 19:05:17.840 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['check_code', 'gen_unregister_phone', 'gen_unregister_name()']
+2024-06-07 19:05:18.154 | INFO     | tools.handle_mysql:query_data:32 - 数据库的查询结果条数为0
+2024-06-07 19:05:18.154 | INFO     | tools.handle_mysql:query_data:46 - 数据库没有查询到任何结果！
+2024-06-07 19:05:18.154 | INFO     | tools.handle_gendata:gen_unregister_name:28 - 生成的可以用的手机号码是:nRYcHBY
+2024-06-07 19:05:18.154 | INFO     | tools.handle_replace:replace_mark:29 - 环境变量的数据为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': '3081a8c2-078f-4f63-a634-98bf610defee', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177, 'basketId': 13088, 'orderNumbers': '1799034867032526848', 'resourcesUrl': 'http://shop.lemonban.com:8108/', 'filePath': '2024/06/b74948476f5d4aaa91429f3885fb77bd.png', 'gen_unregister_phone': '18962698341', 'mobile_code': '472235', 'check_code': 'd3ccd8b0c6a3424a80e7e47f1e2274e4', 'gen_unregister_name': 'nRYcHBY'}
+2024-06-07 19:05:18.155 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"appType":3,"checkRegisterSmsFlag":"d3ccd8b0c6a3424a80e7e47f1e2274e4","mobile":"18962698341","userName":"nRYcHBY","password":"lemon123456","registerOrBind":1,"validateType":1}
+2024-06-07 19:05:18.155 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.155 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://mall.lemonban.com:8107/user/registerOrBindUser
+2024-06-07 19:05:18.155 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:18.155 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：PUT
+2024-06-07 19:05:18.155 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://mall.lemonban.com:8107/user/registerOrBindUser
+2024-06-07 19:05:18.156 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json; charset=UTF-8'}
+2024-06-07 19:05:18.156 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'appType': 3, 'checkRegisterSmsFlag': 'd3ccd8b0c6a3424a80e7e47f1e2274e4', 'mobile': '18962698341', 'userName': 'nRYcHBY', 'password': 'lemon123456', 'registerOrBind': 1, 'validateType': 1}
+2024-06-07 19:05:18.241 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:18.242 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:18.242 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：该手机号已注册，无法重新注册
+2024-06-07 19:05:18.242 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:18.242 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:18.242 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '该手机号已注册，无法重新注册'}
+2024-06-07 19:05:18.242 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：该手机号已注册，无法重新注册
+2024-06-07 19:05:18.243 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:18.245 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:18.245 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.245 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{
+ "Content-Type": "application/json; charset=UTF-8"
+}
+2024-06-07 19:05:18.246 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.246 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"mobile":""}
+2024-06-07 19:05:18.246 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.246 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/user/sendRegisterSms
+2024-06-07 19:05:18.246 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:18.246 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：PUT
+2024-06-07 19:05:18.246 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/user/sendRegisterSms
+2024-06-07 19:05:18.247 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json; charset=UTF-8'}
+2024-06-07 19:05:18.247 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'mobile': ''}
+2024-06-07 19:05:18.331 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:18.331 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:18.331 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：请输入正确的手机号
+2024-06-07 19:05:18.332 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:18.332 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:18.332 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '请输入正确的手机号'}
+2024-06-07 19:05:18.332 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：请输入正确的手机号
+2024-06-07 19:05:18.332 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:18.335 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:18.335 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.335 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{
+ "Content-Type": "application/json; charset=UTF-8"
+}
+2024-06-07 19:05:18.335 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.335 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"mobile":"134556677899"}
+2024-06-07 19:05:18.336 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.336 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/user/sendRegisterSms
+2024-06-07 19:05:18.336 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:18.336 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：PUT
+2024-06-07 19:05:18.336 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/user/sendRegisterSms
+2024-06-07 19:05:18.336 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json; charset=UTF-8'}
+2024-06-07 19:05:18.336 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'mobile': '134556677899'}
+2024-06-07 19:05:18.417 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:18.418 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:18.418 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：请输入正确的手机号
+2024-06-07 19:05:18.418 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:18.418 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:18.418 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '请输入正确的手机号'}
+2024-06-07 19:05:18.419 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：请输入正确的手机号
+2024-06-07 19:05:18.419 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:18.422 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:18.422 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.422 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{
+ "Content-Type": "application/json; charset=UTF-8"
+}
+2024-06-07 19:05:18.422 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.422 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"mobile":"1345566778a"}
+2024-06-07 19:05:18.422 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.422 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/user/sendRegisterSms
+2024-06-07 19:05:18.423 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:18.423 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：PUT
+2024-06-07 19:05:18.423 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/user/sendRegisterSms
+2024-06-07 19:05:18.423 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json; charset=UTF-8'}
+2024-06-07 19:05:18.423 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'mobile': '1345566778a'}
+2024-06-07 19:05:18.501 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:18.502 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:18.502 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：请输入正确的手机号
+2024-06-07 19:05:18.502 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:18.502 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:18.502 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '请输入正确的手机号'}
+2024-06-07 19:05:18.503 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：请输入正确的手机号
+2024-06-07 19:05:18.503 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:18.505 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:18.506 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.506 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{
+ "Content-Type": "application/json; charset=UTF-8"
+}
+2024-06-07 19:05:18.506 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:18.506 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"mobile":"#gen_unregister_phone#","validCode":"123456"}
+2024-06-07 19:05:18.506 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['gen_unregister_phone']
+2024-06-07 19:05:18.506 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"mobile":"18962698341","validCode":"123456"}
+2024-06-07 19:05:18.506 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.507 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/user/checkRegisterSms
+2024-06-07 19:05:18.507 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:18.507 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：PUT
+2024-06-07 19:05:18.507 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/user/checkRegisterSms
+2024-06-07 19:05:18.507 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json; charset=UTF-8'}
+2024-06-07 19:05:18.507 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'mobile': '18962698341', 'validCode': '123456'}
+2024-06-07 19:05:18.631 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:18.632 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:18.632 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：验证码有误或已过期
+2024-06-07 19:05:18.632 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:18.632 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:18.632 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '验证码有误或已过期'}
+2024-06-07 19:05:18.632 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：验证码有误或已过期
+2024-06-07 19:05:18.633 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:18.635 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:18.635 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.636 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{
+ "Content-Type": "application/json; charset=UTF-8"
+}
+2024-06-07 19:05:18.636 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:18.636 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"mobile":"#gen_unregister_phone#","validCode":""}
+2024-06-07 19:05:18.636 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['gen_unregister_phone']
+2024-06-07 19:05:18.636 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"mobile":"18962698341","validCode":""}
+2024-06-07 19:05:18.636 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.636 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/user/checkRegisterSms
+2024-06-07 19:05:18.636 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:18.637 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：PUT
+2024-06-07 19:05:18.637 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/user/checkRegisterSms
+2024-06-07 19:05:18.637 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json; charset=UTF-8'}
+2024-06-07 19:05:18.637 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'mobile': '18962698341', 'validCode': ''}
+2024-06-07 19:05:18.754 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:18.754 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:18.754 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：验证码有误或已过期
+2024-06-07 19:05:18.754 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:18.754 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:18.755 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '验证码有误或已过期'}
+2024-06-07 19:05:18.755 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：验证码有误或已过期
+2024-06-07 19:05:18.755 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:18.757 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:18.758 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:18.758 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{
+ "Content-Type": "application/json; charset=UTF-8"
+}
+2024-06-07 19:05:18.758 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:18.758 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"mobile":"#gen_unregister_phone()#"}
+2024-06-07 19:05:18.758 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['gen_unregister_phone()']
+2024-06-07 19:05:19.042 | INFO     | tools.handle_mysql:query_data:32 - 数据库的查询结果条数为0
+2024-06-07 19:05:19.042 | INFO     | tools.handle_mysql:query_data:46 - 数据库没有查询到任何结果！
+2024-06-07 19:05:19.043 | INFO     | tools.handle_gendata:gen_unregister_phone:16 - 生成的可以用的手机号码是:15516424891
+2024-06-07 19:05:19.043 | INFO     | tools.handle_replace:replace_mark:29 - 环境变量的数据为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': '3081a8c2-078f-4f63-a634-98bf610defee', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177, 'basketId': 13088, 'orderNumbers': '1799034867032526848', 'resourcesUrl': 'http://shop.lemonban.com:8108/', 'filePath': '2024/06/b74948476f5d4aaa91429f3885fb77bd.png', 'gen_unregister_phone': '15516424891', 'mobile_code': '472235', 'check_code': 'd3ccd8b0c6a3424a80e7e47f1e2274e4', 'gen_unregister_name': 'nRYcHBY'}
+2024-06-07 19:05:19.043 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"mobile":"15516424891"}
+2024-06-07 19:05:19.043 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:19.043 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://mall.lemonban.com:8107/user/sendRegisterSms
+2024-06-07 19:05:19.043 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:19.044 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：PUT
+2024-06-07 19:05:19.044 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://mall.lemonban.com:8107/user/sendRegisterSms
+2024-06-07 19:05:19.044 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json; charset=UTF-8'}
+2024-06-07 19:05:19.044 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'mobile': '15516424891'}
+2024-06-07 19:05:19.175 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:19.175 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:19.175 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：
+2024-06-07 19:05:19.176 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:19.176 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:19.176 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:19.178 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:19.179 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"mobile_code":"select mobile_code  from tz_sms_log where user_phone='#gen_unregister_phone#' order by rec_date desc limit 1;"}
+2024-06-07 19:05:19.179 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['gen_unregister_phone']
+2024-06-07 19:05:19.179 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"mobile_code":"select mobile_code  from tz_sms_log where user_phone='15516424891' order by rec_date desc limit 1;"}
+2024-06-07 19:05:19.179 | INFO     | tools.handle_presql:pre_sql:10 - ==========================前置sql执行开始=========================
+2024-06-07 19:05:19.179 | INFO     | tools.handle_presql:pre_sql:13 - 前置sql提取表达式是：{'mobile_code': "select mobile_code  from tz_sms_log where user_phone='15516424891' order by rec_date desc limit 1;"}
+2024-06-07 19:05:19.423 | INFO     | tools.handle_mysql:query_data:32 - 数据库的查询结果条数为1
+2024-06-07 19:05:19.423 | INFO     | tools.handle_mysql:query_data:36 - 查询结果是：{'mobile_code': '017792'}
+2024-06-07 19:05:19.423 | INFO     | tools.handle_presql:pre_sql:21 - 查询结果存到环境变量后属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': '3081a8c2-078f-4f63-a634-98bf610defee', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177, 'basketId': 13088, 'orderNumbers': '1799034867032526848', 'resourcesUrl': 'http://shop.lemonban.com:8108/', 'filePath': '2024/06/b74948476f5d4aaa91429f3885fb77bd.png', 'gen_unregister_phone': '15516424891', 'mobile_code': '017792', 'check_code': 'd3ccd8b0c6a3424a80e7e47f1e2274e4', 'gen_unregister_name': 'nRYcHBY'}
+2024-06-07 19:05:19.423 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:19.423 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{
+ "Content-Type": "application/json; charset=UTF-8"
+}
+2024-06-07 19:05:19.423 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:19.423 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"mobile":"#gen_unregister_phone#","validCode":"#mobile_code#"}
+2024-06-07 19:05:19.423 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['gen_unregister_phone', 'mobile_code']
+2024-06-07 19:05:19.423 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"mobile":"15516424891","validCode":"017792"}
+2024-06-07 19:05:19.423 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:19.423 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://mall.lemonban.com:8107/user/checkRegisterSms
+2024-06-07 19:05:19.423 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:19.423 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：PUT
+2024-06-07 19:05:19.423 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://mall.lemonban.com:8107/user/checkRegisterSms
+2024-06-07 19:05:19.423 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json; charset=UTF-8'}
+2024-06-07 19:05:19.423 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'mobile': '15516424891', 'validCode': '017792'}
+2024-06-07 19:05:19.533 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:19.533 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:19.534 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：d5bc3defcbbc42daa80461e23f5b931a
+2024-06-07 19:05:19.534 | INFO     | tools.handle_extract:extract_response:11 - 提取的响应结果的表达式是：{'check_code': 'text'}
+2024-06-07 19:05:19.534 | INFO     | tools.handle_extract:extract_response:19 - 提取并设置环境变量后的类属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': '3081a8c2-078f-4f63-a634-98bf610defee', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177, 'basketId': 13088, 'orderNumbers': '1799034867032526848', 'resourcesUrl': 'http://shop.lemonban.com:8108/', 'filePath': '2024/06/b74948476f5d4aaa91429f3885fb77bd.png', 'gen_unregister_phone': '15516424891', 'mobile_code': '017792', 'check_code': 'd5bc3defcbbc42daa80461e23f5b931a', 'gen_unregister_name': 'nRYcHBY'}
+2024-06-07 19:05:19.535 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:19.535 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:19.538 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:19.538 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:19.538 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{
+ "Content-Type": "application/json; charset=UTF-8"
+}
+2024-06-07 19:05:19.538 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:19.538 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{"appType":3,"checkRegisterSmsFlag":"#check_code#","mobile":"#gen_unregister_phone#","userName":"lem","password":"lemon123456","registerOrBind":1,"validateType":1}
+2024-06-07 19:05:19.538 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['check_code', 'gen_unregister_phone']
+2024-06-07 19:05:19.539 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"appType":3,"checkRegisterSmsFlag":"d5bc3defcbbc42daa80461e23f5b931a","mobile":"15516424891","userName":"lem","password":"lemon123456","registerOrBind":1,"validateType":1}
+2024-06-07 19:05:19.539 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:19.539 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://mall.lemonban.com:8107/user/registerOrBindUser
+2024-06-07 19:05:19.539 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:19.539 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：PUT
+2024-06-07 19:05:19.539 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://mall.lemonban.com:8107/user/registerOrBindUser
+2024-06-07 19:05:19.539 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json; charset=UTF-8'}
+2024-06-07 19:05:19.540 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'appType': 3, 'checkRegisterSmsFlag': 'd5bc3defcbbc42daa80461e23f5b931a', 'mobile': '15516424891', 'userName': 'lem', 'password': 'lemon123456', 'registerOrBind': 1, 'validateType': 1}
+2024-06-07 19:05:19.633 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:19.633 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：400
+2024-06-07 19:05:19.633 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：用户名应由4-16位数字字母下划线组成
+2024-06-07 19:05:19.634 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:19.634 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:19.634 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'text': '用户名应由4-16位数字字母下划线组成'}
+2024-06-07 19:05:19.634 | INFO     | tools.handle_response_assert:response_assert:36 - 执行结果是：用户名应由4-16位数字字母下划线组成
+2024-06-07 19:05:19.634 | INFO     | tools.handle_response_assert:response_assert:39 - 断言成功！
+2024-06-07 19:05:19.638 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:19.638 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:19.638 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:19.638 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"prodName":"真皮圆筒包"}
+2024-06-07 19:05:19.638 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:19.638 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://mall.lemonban.com:8107/search/searchProdPage
+2024-06-07 19:05:19.639 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:19.639 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：Get
+2024-06-07 19:05:19.639 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://mall.lemonban.com:8107/search/searchProdPage
+2024-06-07 19:05:19.639 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：None
+2024-06-07 19:05:19.639 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'prodName': '真皮圆筒包'}
+2024-06-07 19:05:19.744 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:19.744 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:19.744 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"records":[{"prodId":28,"pic":"http://shop.lemonban.com:8108/2022/06/53de1598edf44ef28329799e04c2c328.jpg","prodName":"真皮圆筒包2022新款潮爆款时尚百搭休闲单肩斜挎牛皮圆形桶包包女","price":139.0,"prodCommNumber":0,"positiveRating":0.0,"praiseNumber":0}],"total":1,"size":10,"current":1,"orders":[],"optimizeCountSql":true,"hitCount":false,"countId":null,"maxLimit":null,"searchCount":true,"pages":1}
+2024-06-07 19:05:19.745 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:19.745 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:19.745 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
+2024-06-07 19:05:19.749 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:19.749 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:19.749 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"Content-Type":"application/json"}
+2024-06-07 19:05:19.749 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:19.750 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"principal": "lemon_py", "credentials": "12345678", "appType": 3, "loginType": 0}
+2024-06-07 19:05:19.750 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:19.750 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:19.750 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:19.750 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：post
+2024-06-07 19:05:19.750 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/login
+2024-06-07 19:05:19.750 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'application/json'}
+2024-06-07 19:05:19.751 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'principal': 'lemon_py', 'credentials': '12345678', 'appType': 3, 'loginType': 0}
+2024-06-07 19:05:19.947 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:19.947 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:19.947 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"access_token":"35293f5d-4732-48ae-8bf5-da075d560a05","token_type":"bearer","refresh_token":"357e4723-7981-4386-984c-d36003e4219c","expires_in":1295999,"pic":"http://shop.lemonban.com:8108/2024/06/b74948476f5d4aaa91429f3885fb77bd.png","userId":"8d0aa6ffd73a42a0acf5006817c0a564","nickName":"lemon_py","enabled":true}
+2024-06-07 19:05:19.947 | INFO     | tools.handle_extract:extract_response:11 - 提取的响应结果的表达式是：{'access_token': '$..access_token', 'token_type': '$..token_type'}
+2024-06-07 19:05:19.948 | INFO     | tools.handle_extract:extract_response:19 - 提取并设置环境变量后的类属性为：{'__module__': 'data.envi_data', '__dict__': <attribute '__dict__' of 'EnviData' objects>, '__weakref__': <attribute '__weakref__' of 'EnviData' objects>, '__doc__': None, 'access_token': '35293f5d-4732-48ae-8bf5-da075d560a05', 'token_type': 'bearer', 'prodId': 28, 'skuId': 7177, 'basketId': 13088, 'orderNumbers': '1799034867032526848', 'resourcesUrl': 'http://shop.lemonban.com:8108/', 'filePath': '2024/06/b74948476f5d4aaa91429f3885fb77bd.png', 'gen_unregister_phone': '15516424891', 'mobile_code': '017792', 'check_code': 'd5bc3defcbbc42daa80461e23f5b931a', 'gen_unregister_name': 'nRYcHBY'}
+2024-06-07 19:05:19.948 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:19.948 | INFO     | tools.handle_response_assert:response_assert:23 - 期望结果的表示式是：{'$..nickName': 'lemon_py', '$..enabled': True}
+2024-06-07 19:05:19.948 | INFO     | tools.handle_response_assert:response_assert:27 - 执行结果是：lemon_py
+2024-06-07 19:05:19.948 | INFO     | tools.handle_response_assert:response_assert:30 - 断言成功！
+2024-06-07 19:05:19.948 | INFO     | tools.handle_response_assert:response_assert:27 - 执行结果是：True
+2024-06-07 19:05:19.949 | INFO     | tools.handle_response_assert:response_assert:30 - 断言成功！
+2024-06-07 19:05:19.951 | INFO     | tools.handle_replace:replace_mark:15 - 数据为空，不需要做替换操作！
+2024-06-07 19:05:19.952 | INFO     | tools.handle_replace:replace_mark:19 - ============================开始替换数据===============================
+2024-06-07 19:05:19.952 | INFO     | tools.handle_replace:replace_mark:20 - 原始字符串是：{ "Content-Type": "multipart/form-data","Authorization": "#token_type##access_token#"}
+2024-06-07 19:05:19.952 | INFO     | tools.handle_replace:replace_mark:21 - 要替换的占位符有：['token_type', 'access_token']
+2024-06-07 19:05:19.952 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{ "Content-Type": "multipart/form-data","Authorization": "bearer35293f5d-4732-48ae-8bf5-da075d560a05"}
+2024-06-07 19:05:19.952 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:19.958 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：{"filename":"code.png"}
+2024-06-07 19:05:19.958 | INFO     | tools.handle_replace:replace_mark:38 - 要替换的占位符为空：[],不需要做替换！
+2024-06-07 19:05:19.959 | INFO     | tools.handle_replace:replace_mark:39 - 替换完成之后的字符串是：http://shop.lemonban.com:8107/p/file/upload
+2024-06-07 19:05:19.959 | INFO     | tools.handle_requests:requests_api:40 - -----------------------------------请求消息--------------------------------
+2024-06-07 19:05:19.960 | INFO     | tools.handle_requests:requests_api:41 - 请求方法是：post
+2024-06-07 19:05:19.960 | INFO     | tools.handle_requests:requests_api:42 - 请求地址是：http://shop.lemonban.com:8107/p/file/upload
+2024-06-07 19:05:19.960 | INFO     | tools.handle_requests:requests_api:43 - 请求头部是：{'Content-Type': 'multipart/form-data', 'Authorization': 'bearer35293f5d-4732-48ae-8bf5-da075d560a05'}
+2024-06-07 19:05:19.960 | INFO     | tools.handle_requests:requests_api:44 - 请求参数是：{'filename': 'code.png'}
+2024-06-07 19:05:19.960 | INFO     | tools.handle_requests:requests_api:63 - 文件上传的文件对象参数：{'file': <_io.BufferedReader name='D:\\Pychram-Workspace\\python_Interface\\data\\code.png'>}
+2024-06-07 19:05:19.961 | INFO     | tools.handle_requests:requests_api:64 - 文件上传的最终请求头：{'Authorization': 'bearer35293f5d-4732-48ae-8bf5-da075d560a05'}
+2024-06-07 19:05:20.052 | INFO     | tools.handle_requests:requests_api:69 - ---------------------------------响应消息----------------------------------------
+2024-06-07 19:05:20.053 | INFO     | tools.handle_requests:requests_api:70 - 接口响应状态码：200
+2024-06-07 19:05:20.053 | INFO     | tools.handle_requests:requests_api:71 - 接口响应正文：{"resourcesUrl":"http://shop.lemonban.com:8108/","filePath":"2024/06/68582d616f864b48bdb450fdea3d81b4.png"}
+2024-06-07 19:05:20.053 | INFO     | tools.handle_extract:extract_response:8 - 没有要从响应结果里提取的数据！
+2024-06-07 19:05:20.053 | INFO     | tools.handle_response_assert:response_assert:17 - =============================开始断言=================================
+2024-06-07 19:05:20.053 | INFO     | tools.handle_response_assert:response_assert:20 - 用例不需要做断言！
